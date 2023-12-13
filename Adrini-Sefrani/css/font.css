@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;700&display=swap');
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?o4ku87');
+    src:  url('../fonts/icomoon.eot?o4ku87#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?o4ku87') format('truetype'),
+        url('../fonts/icomoon.woff?o4ku87') format('woff'),
+        url('../fonts/icomoon.svg?o4ku87#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak-as: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .icon-facebook2:before {
+    content: "\ea91";
+  }
+  .icon-instagram:before {
+    content: "\ea92";
+  }
+  .icon-WhatsApp:before {
+  content: "\ea93";
+}
+  .icon-YouTube:before {
+    content: "\ea9d";
+  }
+  .icon-tiktok:before {
+    content: "\e900";
+  }

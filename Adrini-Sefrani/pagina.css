@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.part2{
+    width: 100% !important;
+    height: 1370px !important;
+    padding: 0px;
+    margin: 0px;
+}
+.servicios{
+    width: 100% !important;
+    height: 1200px !important;
+}
+.parte4{
+    width: 100% !important;
+    height: 900px !important;
+}
+.parte6 {
+    width: 100% !important;
+    height: 800px !important;
+}
+.parte5y7 {
+    width: 100% !important;
+    height: 1100px !important;
+}
+.intro {
+    width: 100% !important;
+    height: 680px !important;
+}

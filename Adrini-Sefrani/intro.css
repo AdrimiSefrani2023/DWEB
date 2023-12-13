@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-size: cover;
+    overflow: hidden;
+}
+
+.curtain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1D1D1B;
+    z-index: 2;
+    animation: openCurtain 2s ease-in-out forwards, fadeOut 2s ease-in-out 4s forwards; /* La cortina se abre al principio y desaparece después de 2 segundos */
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3; /* Asegura que el contenido esté encima de la cortina */
+}
+
+.ring {
+    width: 450px;
+    height: 450px;
+    border: 0px solid rgb(240, 240, 240);
+    border-radius: 50%;
+    position: absolute;
+    opacity: 1; /* Establece la opacidad del ring en 1 para que esté presente desde el principio */
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg); /* Aplicamos la transformación inicial para que no comience paralizado */
+    animation: fadeIn 1s ease-in-out 0s forwards, rotate1 2s linear infinite 0s, fadeOut 2s ease-in-out 2s forwards; /* Añade una animación de aparición, rotación y desaparición al ring después de 0 segundos y desaparece después de 6 segundos */
+}
+
+.ring:nth-child(1) {
+    border-right-width: 40px;
+    border-color: rgb(255, 255, 255);
+}
+
+.logo img {
+    width: 300px;
+    opacity: 1; /* Establece la opacidad del logo en 1 para que esté presente desde el principio */
+    animation: fadeIn 1s ease-in-out 0s forwards, fadeOut 2s ease-in-out 1s forwards; /* Añade una animación de aparición y desaparición al logo después de 0 segundos y desaparece después de 6 segundos */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes rotate1 {
+    0% {
+        transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+    }
+}
+
+@keyframes openCurtain {
+    0% {
+        transform: skewX(100deg);
+    }
+    100% {
+        transform: skewX(0deg);
+    }
+}

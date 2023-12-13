@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adrimi-SEFRANI</title>
+    <link rel="stylesheet" href="pagina.css">
+    <link rel="icon" href="img/icono.png">
+</head>
+<body>
+    <div id="loading-container">
+        <iframe class="intro" src="index.html" frameborder="0"></iframe>
+    </div>
+    <div id="content-container" style="display: none;">
+        <iframe class="part2" src="part2.html" frameborder="0"></iframe>
+        <iframe class="servicios" src="servicios.html" frameborder="0"></iframe>
+        <iframe class="parte6" src="parte6.html" frameborder="0"></iframe>
+        <iframe class="parte4" src="parte4.html" frameborder="0"></iframe>
+        <iframe class="parte5y7" src="parte5y7.html" frameborder="0"></iframe>
+    </div>
+    <script>
+        setTimeout(function () {
+            document.getElementById("loading-container").style.display = "none";
+            document.getElementById("content-container").style.display = "block";
+        }, 2900); // 2000 milisegundos (2 segundos) de retraso simulado
+    </script>
+</body>
+</html>
